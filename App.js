@@ -8,16 +8,23 @@
 
 import React, {useState} from 'react';
 import {StyleSheet, Text, View, FlatList, Dimensions} from 'react-native';
-import {Avatar, Surface, Chip} from 'react-native-paper';
+import {Avatar, Divider} from 'react-native-paper';
+import SelectorCurs from './components/SelectorCurs';
 import UnCicle from './components/UnCicle';
 
 const App = () => {
   const [info, setInfo] = useState(require('./utils/dades.json'));
   const [cicleSeleccionat, setCicleSeleccionat] = useState(null);
-  const [primerCurs, setPrimerCurs] = useState(false);
-  const [segonCurs, setSegonCurs] = useState(false);
   const [cursSeleccionat, setCursSeleccionat] = useState(null);
 
+/*   const seleccionaUnCurs = (primer, segon) => {
+    if (!primer && segon) {
+      setCursSeleccionat(1);
+    } else {
+      setCursSeleccionat(0);
+    }
+  };
+ */
   return (
     <View style={{flex: 0.8}}>
       <View
@@ -25,8 +32,6 @@ const App = () => {
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
-          borderColor: 'red',
-          borderWidth: 1,
         }}>
         <Text style={styles.sectionTitle}>Unitat TICS</Text>
         {console.log(info.unitatTics + '\n' + cicleSeleccionat)}
@@ -36,7 +41,7 @@ const App = () => {
           keyExtractor={unaTitulacio =>
             unaTitulacio.cicle + '-' + unaTitulacio.nomCicle
           }
-          renderItem={(unaTitulacio) => (
+          renderItem={unaTitulacio => (
             <UnCicle
               elCicle={unaTitulacio}
               guardaPosicio={setCicleSeleccionat}
@@ -45,39 +50,12 @@ const App = () => {
           )}
         />
       </View>
-      <View
-        style={{
-          flex: 0.5,
-          borderColor: 'blue',
-          borderWidth: 1,
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-around',
-        }}>
-        <Text style={styles.sectionTitle}>Cursos:</Text>
-        <View
-          style={{
-            flexDirection: 'row',
-            flex: 1,
-            margin: 5,
-            padding: 3,
-            justifyContent: 'space-around',
-          }}>
-          <Chip
-            mode="flat"
-            selected={primerCurs}
-            onPress={() => setPrimerCurs(!primerCurs)}>
-            1r Curs
-          </Chip>
-          <Chip
-            mode="flat"
-            selected={segonCurs}
-            onPress={() => setSegonCurs(!segonCurs)}>
-            2n Curs
-          </Chip>
-        </View>
-      </View>
-      <View style={{flex: 2, borderColor: 'green', borderWidth: 1}}>
+      <Divider style={{padding: 3}} horizontalInset={true} bold={true} />
+
+      <SelectorCurs />
+
+      <Divider style={{padding: 3}} horizontalInset={true} bold={true} />
+      <View style={{flex: 2, padding: 3}}>
         {cicleSeleccionat !== null ? (
           info.unitatTics[cicleSeleccionat].curs[0].profes.map(
             (unModul, index) => {
