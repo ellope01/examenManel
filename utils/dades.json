@@ -152,97 +152,99 @@
                     ]
                 },
                 {
-                "numCurs": "2n",
-                "profes": [
-                    {
-                        "nom": "David",
-                        "foto": "bluetooth",
-                        "modul": "DWES",
-                        "nomCompletModul": "Desenvolupament web en entorn servidor",
-                        "horesSetmanals": 8
-                    },
-                    {
-                        "nom": "Paco",
-                        "foto": "camera",
-                        "modul": "DWEC",
-                        "nomCompletModul": "Desenvolupament web en entorn client",
-                        "horesSetmanals": 7
-                    },
-                    {
-                        "nom": "Belén",
-                        "foto": "heart",
-                        "modul": "DIW",
-                        "nomCompletModul": "Disseny d'interficies web",
-                        "horesSetmanals": 6
-                    },
-                    {
-                        "nom": "Caterina",
-                        "foto": "shuffle",
-                        "modul": "ANG",
-                        "nomCompletModul": "Anglés",
-                        "horesSetmanals": 3
-                    },
-                    {
-                        "nom": "Uwe",
-                        "foto": "alarm",
-                        "modul": "EIE",
-                        "nomCompletModul": "Empresa i iniciativa emprenedora",
-                        "horesSetmanals": 3
-                    }
-                ]
-            }
-        ]
+                    "numCurs": "2n",
+                    "profes": [
+                        {
+                            "nom": "David",
+                            "foto": "bluetooth",
+                            "modul": "DWES",
+                            "nomCompletModul": "Desenvolupament web en entorn servidor",
+                            "horesSetmanals": 8
+                        },
+                        {
+                            "nom": "Paco",
+                            "foto": "camera",
+                            "modul": "DWEC",
+                            "nomCompletModul": "Desenvolupament web en entorn client",
+                            "horesSetmanals": 7
+                        },
+                        {
+                            "nom": "Belén",
+                            "foto": "heart",
+                            "modul": "DIW",
+                            "nomCompletModul": "Disseny d'interficies web",
+                            "horesSetmanals": 6
+                        },
+                        {
+                            "nom": "Caterina",
+                            "foto": "shuffle",
+                            "modul": "ANG",
+                            "nomCompletModul": "Anglés",
+                            "horesSetmanals": 3
+                        },
+                        {
+                            "nom": "Uwe",
+                            "foto": "alarm",
+                            "modul": "EIE",
+                            "nomCompletModul": "Empresa i iniciativa emprenedora",
+                            "horesSetmanals": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "cicle": "ASIR",
             "nomCicle": "Administració de Sistemes Informàtics i Xarxes",
-            "curs": {
-                "numCurs": "1r",
-                "profes": [
-                    {
-                        "nom": "Rosa",
-                        "foto": "bluetooth",
-                        "modul": "GBD",
-                        "nomCompletModul": "Gestió de base de dades",
-                        "horesSetmanals": 5
-                    },
-                    {
-                        "nom": "Jaime",
-                        "foto": "camera",
-                        "modul": "PAX",
-                        "nomCompletModul": "Planificació i administració de xarxes",
-                        "horesSetmanals": 6
-                    },
-                    {
-                        "nom": "Pau",
-                        "foto": "camera",
-                        "modul": "ISO",
-                        "nomCompletModul": "Implantació de sistemes operatius",
-                        "horesSetmanals": 7
-                    },
-                    {
-                        "nom": "Pau",
-                        "foto": "heart",
-                        "modul": "FOH",
-                        "nomCompletModul": "Fonaments de hardware",
-                        "horesSetmanals": 3
-                    },
-                    {
-                        "nom": "Caterina",
-                        "foto": "shuffle",
-                        "modul": "ANG",
-                        "nomCompletModul": "Anglés",
-                        "horesSetmanals": 3
-                    },
-                    {
-                        "nom": "Carles",
-                        "foto": "alarm",
-                        "modul": "FOL",
-                        "nomCompletModul": "Formació i orientació laboral",
-                        "horesSetmanals": 3
-                    }
-                ]
-            }
+            "curs": [
+                {
+                    "numCurs": "1r",
+                    "profes": [
+                        {
+                            "nom": "Rosa",
+                            "foto": "bluetooth",
+                            "modul": "GBD",
+                            "nomCompletModul": "Gestió de base de dades",
+                            "horesSetmanals": 5
+                        },
+                        {
+                            "nom": "Jaime",
+                            "foto": "camera",
+                            "modul": "PAX",
+                            "nomCompletModul": "Planificació i administració de xarxes",
+                            "horesSetmanals": 6
+                        },
+                        {
+                            "nom": "Pau",
+                            "foto": "camera",
+                            "modul": "ISO",
+                            "nomCompletModul": "Implantació de sistemes operatius",
+                            "horesSetmanals": 7
+                        },
+                        {
+                            "nom": "Pau",
+                            "foto": "heart",
+                            "modul": "FOH",
+                            "nomCompletModul": "Fonaments de hardware",
+                            "horesSetmanals": 3
+                        },
+                        {
+                            "nom": "Caterina",
+                            "foto": "shuffle",
+                            "modul": "ANG",
+                            "nomCompletModul": "Anglés",
+                            "horesSetmanals": 3
+                        },
+                        {
+                            "nom": "Carles",
+                            "foto": "alarm",
+                            "modul": "FOL",
+                            "nomCompletModul": "Formació i orientació laboral",
+                            "horesSetmanals": 3
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
