@@ -50,53 +50,6 @@
                             "horesSetmanals": 3
                         }
                     ]
-                },
-                {
-                    "numCurs": "2n",
-                    "profes": [
-                        {
-                            "nom": "Manel",
-                            "foto": "bluetooth",
-                            "modul": "DI",
-                            "nomCompletModul": "Desenvolupament d'interfícies",
-                            "horesSetmanals": 6
-                        },
-                        {
-                            "nom": "Roberto",
-                            "foto": "camera",
-                            "modul": "ADA",
-                            "nomCompletModul": "Accés a dades",
-                            "horesSetmanals": 6
-                        },
-                        {
-                            "nom": "Roberto",
-                            "foto": "camera",
-                            "modul": "PSP",
-                            "nomCompletModul": "Programació de serveis i processos",
-                            "horesSetmanals": 3
-                        },
-                        {
-                            "nom": "Paco",
-                            "foto": "heart",
-                            "modul": "PMDM",
-                            "nomCompletModul": "Programació multimèdida i dispositius mòbils",
-                            "horesSetmanals": 5
-                        },
-                        {
-                            "nom": "Belen",
-                            "foto": "shuffle",
-                            "modul": "SGE",
-                            "nomCompletModul": "Sistemes de gestió empresarial",
-                            "horesSetmanals": 6
-                        },
-                        {
-                            "nom": "Ana",
-                            "foto": "alarm",
-                            "modul": "EIE",
-                            "nomCompletModul": "Empresa i iniciativa emprenedora",
-                            "horesSetmanals": 6
-                        }
-                    ]
                 }
             ]
         },
@@ -108,85 +61,45 @@
                     "numCurs": "1r",
                     "profes": [
                         {
-                            "nom": "Salva",
+                            "nom": "Pepe",
                             "foto": "bluetooth",
                             "modul": "PRO",
                             "nomCompletModul": "Programació",
                             "horesSetmanals": 8
                         },
                         {
-                            "nom": "Javi",
+                            "nom": "Juan",
                             "foto": "camera",
                             "modul": "FOL",
                             "nomCompletModul": "Formació i orientació laboral",
                             "horesSetmanals": 3
                         },
                         {
-                            "nom": "Toni",
+                            "nom": "Luis",
                             "foto": "camera",
                             "modul": "BD",
                             "nomCompletModul": "Bases de dades",
                             "horesSetmanals": 5
                         },
                         {
-                            "nom": "José Manuel",
+                            "nom": "Empar",
                             "foto": "heart",
                             "modul": "LMSGI",
                             "nomCompletModul": "Llenguatge de marques i sistemes de gestió de la informació",
                             "horesSetmanals": 3
                         },
                         {
-                            "nom": "Vicent",
+                            "nom": "Laura",
                             "foto": "shuffle",
                             "modul": "SI",
                             "nomCompletModul": "Sistemes informàtics",
                             "horesSetmanals": 5
                         },
                         {
-                            "nom": "Raquel",
+                            "nom": "Noelia",
                             "foto": "alarm",
                             "modul": "ANG",
                             "nomCompletModul": "Anglés tècnic",
-                            "horesSetmanals": 3
-                        }
-                    ]
-                },
-                {
-                    "numCurs": "2n",
-                    "profes": [
-                        {
-                            "nom": "David",
-                            "foto": "bluetooth",
-                            "modul": "DWES",
-                            "nomCompletModul": "Desenvolupament web en entorn servidor",
-                            "horesSetmanals": 8
-                        },
-                        {
-                            "nom": "Paco",
-                            "foto": "camera",
-                            "modul": "DWEC",
-                            "nomCompletModul": "Desenvolupament web en entorn client",
-                            "horesSetmanals": 7
-                        },
-                        {
-                            "nom": "Belén",
-                            "foto": "heart",
-                            "modul": "DIW",
-                            "nomCompletModul": "Disseny d'interficies web",
-                            "horesSetmanals": 6
-                        },
-                        {
-                            "nom": "Caterina",
-                            "foto": "shuffle",
-                            "modul": "ANG",
-                            "nomCompletModul": "Anglés",
-                            "horesSetmanals": 3
-                        },
-                        {
-                            "nom": "Uwe",
-                            "foto": "alarm",
-                            "modul": "EIE",
-                            "nomCompletModul": "Empresa i iniciativa emprenedora",
                             "horesSetmanals": 3
                         }
                     ]

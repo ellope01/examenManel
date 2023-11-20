@@ -7,26 +7,21 @@
  */
 
 import React, {useState} from 'react';
-import {StyleSheet, Text, View, FlatList, Dimensions} from 'react-native';
+import {StyleSheet, Text, ScrollView, View, Dimensions} from 'react-native';
 import {Avatar, Divider} from 'react-native-paper';
-import SelectorCurs from './components/SelectorCurs';
 import UnCicle from './components/UnCicle';
+import LlistatProfesCicle from './components/LlistatProfesCicle';
 
 const App = () => {
   const [info, setInfo] = useState(require('./utils/dades.json'));
   const [cicleSeleccionat, setCicleSeleccionat] = useState(null);
-  const [cursSeleccionat, setCursSeleccionat] = useState(null);
 
-/*   const seleccionaUnCurs = (primer, segon) => {
-    if (!primer && segon) {
-      setCursSeleccionat(1);
-    } else {
-      setCursSeleccionat(0);
-    }
+  const unCicleSeleccionat = posicioElement => {
+    console.log('He rebut ' + posicioElement);
+    setCicleSeleccionat(posicioElement);
   };
- */
   return (
-    <View style={{flex: 0.8}}>
+    <View style={{flex: 0.8 }}>
       <View
         style={{
           flex: 1,
@@ -34,51 +29,26 @@ const App = () => {
           alignItems: 'center',
         }}>
         <Text style={styles.sectionTitle}>Unitat TICS</Text>
-        {console.log(info.unitatTics + '\n' + cicleSeleccionat)}
-        <FlatList
-          horizontal={true}
-          data={info.unitatTics}
-          keyExtractor={unaTitulacio =>
-            unaTitulacio.cicle + '-' + unaTitulacio.nomCicle
-          }
-          renderItem={unaTitulacio => (
-            <UnCicle
-              elCicle={unaTitulacio}
-              guardaPosicio={setCicleSeleccionat}
-              cicleSeleccionat={cicleSeleccionat}
-            />
-          )}
-        />
-      </View>
-      <Divider style={{padding: 3}} horizontalInset={true} bold={true} />
-
-      <SelectorCurs />
-
-      <Divider style={{padding: 3}} horizontalInset={true} bold={true} />
-      <View style={{flex: 2, padding: 3}}>
-        {cicleSeleccionat !== null ? (
-          info.unitatTics[cicleSeleccionat].curs[0].profes.map(
-            (unModul, index) => {
+        <View style={{flex: 1}}>
+          <ScrollView horizontal={true}>
+            {info.unitatTics.map((unCicleTic, index) => {
               return (
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                  }}
-                  key={index}>
-                  <Avatar.Icon size={36} icon={unModul.foto} />
-                  <Text>{unModul.nom}</Text>
-                </View>
+                <UnCicle
+                  elCicle={unCicleTic}
+                  key={index}
+                  guardaPosicio={unCicleSeleccionat}
+                  cicleSeleccionat={cicleSeleccionat}
+                  index={index}
+                />
               );
-            },
-          )
-        ) : (
-          <Text>
-            Selecciona un cicle. Sempre es visualitzaran els profes de 1r curs
-          </Text>
-        )}
+            })}
+          </ScrollView>
+        </View>
+        {console.log(info.unitatTics + '\n' + cicleSeleccionat)}
       </View>
+      <Divider style={{padding: 3}} horizontalInset={true} bold={true} />
+
+      <LlistatProfesCicle cicleSeleccionat={cicleSeleccionat} dades={info} />
     </View>
   );
 };
@@ -106,11 +76,6 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-  },
-  sectionDescription: {
-    flexWrap: 'wrap',
-    fontSize: 14,
-    fontWeight: '400',
   },
 });
 

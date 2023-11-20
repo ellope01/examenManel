@@ -18,7 +18,7 @@ const UnCicle = props => {
     <Surface
       style={
         props.cicleSeleccionat !== null &&
-        props.elCicle.index === props.cicleSeleccionat
+        props.index === props.cicleSeleccionat
           ? styles.estilCardSeleccionat
           : styles.estilCard
       }
@@ -26,13 +26,13 @@ const UnCicle = props => {
       <View>
         <Text
           style={styles.sectionTitle}
-          onPress={() => props.guardaPosicio(props.elCicle.index)}>
-          {props.elCicle.item.cicle}
+          onPress={() => props.guardaPosicio(props.index)}>
+          {props.elCicle.cicle}
         </Text>
         <Text
           style={styles.sectionDescription}
-          onPress={() => props.guardaPosicio(props.elCicle.index)}>
-          {props.elCicle.item.nomCicle}
+          onPress={() => props.guardaPosicio(props.index)}>
+          {props.elCicle.nomCicle}
         </Text>
       </View>
     </Surface>
@@ -58,6 +58,15 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderRadius: 9,
     backgroundColor: '#9933FF',
+  },
+  sectionTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+  },
+  sectionDescription: {
+    flexWrap: 'wrap',
+    fontSize: 16,
+    fontWeight: '400',
   },
 });
 export default UnCicle;
