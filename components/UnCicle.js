@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
     padding: 3,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'black',
+    borderColor: '#ff0080',
+    backgroundColor: '#ffe0e9',
     borderRadius: 9,
   },
   estilCardSeleccionat: {
@@ -55,9 +56,9 @@ const styles = StyleSheet.create({
     padding: 3,
     alignItems: 'center',
     borderWidth: 3,
-    borderColor: 'black',
+    borderColor: '#ff0080',
     borderRadius: 9,
-    backgroundColor: '#9933FF',
+    backgroundColor: 'hotpink',
   },
   sectionTitle: {
     fontSize: 24,
